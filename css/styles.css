@@ -12,6 +12,7 @@ hr {
   width: 8%;
 }
 hr:hover{
+  border-color: #ff2e63;
   animation: animationForHorizontalRule;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -34,23 +35,56 @@ a {
 }
 .profilePicture {
   background:linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  padding: 7px;
+  padding: 8px;
   border-radius: 100%;
+  animation: animationForProfilePicture;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+@keyframes animationForProfilePicture {
+  from {
+        background:linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        padding: 0;
+        border-radius: 100%;
+      }
+  to{
+        background:linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        padding: 7px;
+        border-radius: 100%;
+      }
 }
 .profilePicture:hover {
   background:linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  padding: 7px;
+  padding: 8px;
   border-radius: 75%;
 }
 .name {
+  background: linear-gradient(200deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  width: 207px;
+  padding-left: 13px;
+  padding-right: 20px;
   letter-spacing: 1.5px;
   text-shadow: 2.9px 2px 1.7px #ff2e63;
   animation-name: animationForText;
-  animation-duration: 0.5s;
-  animation-direction: alternate;
+  animation-duration: 0.8s;
+  animation-direction: normal;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: 2.2;
+  animation-iteration-count: 1;
 }
+@keyframes animationForText {
+  from{text-shadow: 0.1px 0.1px 1.7px #ff2e63;
+    background: linear-gradient(200deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    padding-left: 25%;
+    padding-right: 0;
+  }
+  to {text-shadow: 3.2px 2.1px 2px #ff2e63;
+      background: linear-gradient(200deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+/*
 .name:hover{
   animation: animationForHoverText;
   animation-duration: 0.25s;
@@ -58,13 +92,8 @@ a {
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
 }
-hr:hover {
-  border-color: #ff2e63;
-}
-@keyframes animationForText {
-  from{text-shadow: 0.1px 0.1px 1.7px #ff2e63;}
-  to {text-shadow: 3.2px 2.1px 2px #ff2e63;}
-}
+*/
+
 
 /*
 @keyframes animationForHoverText {
