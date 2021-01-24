@@ -1,23 +1,23 @@
 body {
-  background-color: #f8f1f1;
+  background-color: #252a34;
   font-size: large;
-  color: #5eaaa8;
+  color: #eaeaea;
 }
 hr {
   background-color: transparent;
   border-style: dotted;
   border-width: 11px 0 0 0;
-  border-color: #a3d2ca;
-  width: 10%;
+  border-color: #ff2e63;
+  width: 8%;
 }
 h1 {
-  color: #db6400;
+  color: white;
 }
 h3 {
-  color: #db6400;
+  color: #ff2e63;
 }
 a {
-  color: #db6400;
+  color: #ff2e63;
 }
 .profilePicture {
   background:linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
@@ -30,7 +30,8 @@ a {
   border-radius: 75%;
 }
 .name {
-  text-shadow: 1.75px 1.75px 1.7px brown;
+  letter-spacing: 1.5px;
+  text-shadow: 2.9px 2px 1.7px #ff2e63;
   animation-name: animationForText;
   animation-duration: 0.5s;
   animation-direction: alternate;
@@ -38,7 +39,6 @@ a {
   animation-iteration-count: infinite;
 }
 .name:hover{
-  text-shadow: 2px 2px 60px #db6400;
   animation: animationForHoverText;
   animation-duration: 0.25s;
   animation-iteration-count: 2;
@@ -46,7 +46,7 @@ a {
   animation-direction: alternate;
 }
 hr:hover {
-  border-color: brown;
+  border-color: #ff2e63;
 }
 /*
 @keyframes animationForText {
