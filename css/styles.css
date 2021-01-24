@@ -10,18 +10,28 @@ hr {
   border-width: 11px 0 0 0;
   border-color: #ff2e63;
   width: 8%;
+  animation: animationForHorizontalRule;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
 hr:hover{
   border-color: #ff2e63;
-  animation: animationForHorizontalRule;
+  animation: animationForHorizontalRuleHover;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
-@keyframes animationForHorizontalRule {
+@keyframes animationForHorizontalRuleHover {
   from {width: 8%;}
   to {width: 25%;
+  border-color: #252a34;}
+}
+@keyframes animationForHorizontalRule {
+  from {width: 8%;}
+  to {width: 16%;
   border-color: #252a34;}
 }
 h1 {
