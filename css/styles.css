@@ -30,12 +30,46 @@ a {
   border-radius: 75%;
 }
 .name {
-  text-shadow: 2px 2px 1.7px brown;
+  text-shadow: 1.75px 1.75px 1.7px brown;
+  animation-name: animationForText;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 .name:hover{
-  color: brown;
   text-shadow: 2px 2px 60px #db6400;
+  animation: animationForHoverText;
+  animation-duration: 0.25s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 hr:hover {
   border-color: brown;
 }
+/*
+@keyframes animationForText {
+  from{text-shadow: 2px 2px 1.7px brown;}
+  to {text-shadow: 2.2px 2.2px 2.7px brown;}
+}
+@keyframes animationForHoverText {
+  0% {letter-spacing: normal;}
+  12% {letter-spacing: 0.5px}
+  25% {letter-spacing: 1px;}
+  37% {letter-spacing: 1.5px}
+  50% {letter-spacing: 2px;}
+  63% {letter-spacing: 2.5px;}
+  75% {letter-spacing: 3px;}
+  87% {letter-spacing: 3.5px;}
+  100% {letter-spacing: 4px;}
+  87% {letter-spacing: 3.5px;}
+  75% {letter-spacing: 3px;}
+  63% {letter-spacing: 2.5px;}
+  50% {letter-spacing: 2px;}
+  37% {letter-spacing: 1.5px}
+  25% {letter-spacing: 1px;}
+  12% {letter-spacing: 0.5px}
+  0% {letter-spacing: normal;}
+}
+*/
