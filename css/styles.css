@@ -30,11 +30,11 @@ a {
   border-radius: 75%;
 }
 .name {
-  text-shadow: 2px 2px 0 brown;
+  text-shadow: 2px 2px 1.7px brown;
 }
 .name:hover{
   color: brown;
-  text-shadow: 2px 2px 0 #db6400;
+  text-shadow: 2px 2px 60px #db6400;
 }
 hr:hover {
   border-color: brown;
