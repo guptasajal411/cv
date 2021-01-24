@@ -11,6 +11,18 @@ hr {
   border-color: #ff2e63;
   width: 8%;
 }
+hr:hover{
+  animation: animationForHorizontalRule;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+@keyframes animationForHorizontalRule {
+  from {width: 8%;}
+  to {width: 25%;
+  border-color: #252a34;}
+}
 h1 {
   color: white;
 }
@@ -36,8 +48,8 @@ a {
   animation-name: animationForText;
   animation-duration: 0.5s;
   animation-direction: alternate;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 2.2;
 }
 .name:hover{
   animation: animationForHoverText;
@@ -49,11 +61,12 @@ a {
 hr:hover {
   border-color: #ff2e63;
 }
-/*
 @keyframes animationForText {
-  from{text-shadow: 2px 2px 1.7px brown;}
-  to {text-shadow: 2.2px 2.2px 2.7px brown;}
+  from{text-shadow: 0.1px 0.1px 1.7px #ff2e63;}
+  to {text-shadow: 3.2px 2.1px 2px #ff2e63;}
 }
+
+/*
 @keyframes animationForHoverText {
   0% {letter-spacing: normal;}
   12% {letter-spacing: 0.5px}
