@@ -1,1 +1,1 @@
-CV made by me using pure HTML. This is first website that I made while learning HTML for web development.
+CV made by me using pure HTML & CSS. This is first website that I made while learning web development.
