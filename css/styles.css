@@ -18,9 +18,9 @@ a {
 }
 
 .profilePicture {
-  filter: contrast(1.15);
+  filter: contrast(1);
   background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  padding: 8px;
+  padding: 9px;
   border-radius: 100%;
   animation: animationForProfilePicture;
   animation-duration: 1s;
@@ -31,24 +31,24 @@ a {
 
 @keyframes animationForProfilePicture {
   0% {
-    filter: blur(1.5px);
     background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     padding: 0;
     border-radius: 100%;
+    filter: opacity(0);
   }
 
-  93% {
-    filter: blur(1.5px);
+  85% {
     background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     padding: 0;
     border-radius: 100%;
+    filter: opacity(75%);
   }
 
   100% {
-    filter: blur(0);
     background: linear-gradient(320deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    padding: 7px;
+    padding: 8px;
     border-radius: 100%;
+    filter: opacity(100%);
   }
 }
 
