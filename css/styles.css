@@ -131,13 +131,3 @@ hr:hover {
     border-color: #252a34;
   }
 }
-
-/*
-.name:hover{
-  animation: animationForHoverText;
-  animation-duration: 0.25s;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-*/
