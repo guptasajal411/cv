@@ -1,7 +1,8 @@
 body {
   background-color: #252a34;
-  font-family: "Product Sans", sans-sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: large;
+
   color: #eaeaea;
 }
 
@@ -59,10 +60,12 @@ a {
 }
 
 .name {
+  font-family: 'Yusei Magic', sans-serif;
   filter: blur(0);
   text-shadow: 3.2px 2.1px 2px #ff2e63;
   padding-left: 0;
   padding-right: 0;
+  letter-spacing: 5px;
   animation: animationForText;
   animation-duration: 0.6s;
   animation-timing-function: ease-in-out;
@@ -131,3 +134,13 @@ hr:hover {
     border-color: #252a34;
   }
 }
+
+/*
+.name:hover{
+  animation: animationForHoverText;
+  animation-duration: 0.25s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+*/
